@@ -18,7 +18,7 @@
   --font-medium: 28px;
   --font-regular: 18px;
   --font-small: 16px;
-  --font-micro: 14px;
+  --font-micro: 10px;
 
   /* Font weight */
   --weight-bold: 700;
@@ -27,6 +27,9 @@
 
   /* Size */
   --Size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
 /* Universal tags */
@@ -111,6 +114,7 @@ p {
   align-items: center;
   font-size: var(--font-medium);
   font-weight: var(--weight-semi-bold);
+  margin-left: 16px;
 }
 
 .navbar__logo img {
@@ -161,4 +165,79 @@ p {
   padding: 8px 12px;
   border: 2px solid var(--color-white);
   border-radius: var(--Size-border-radius);
+}
+
+/*Section common*/
+.section {
+  padding: 50px;
+  text-align: center;
+  /* 최대넓이 지정 */
+  max-width: 1200px;
+  /* margin 분배 */
+  margin: auto;
+}
+
+/* About */
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  line-height: 170px;
+  font-size: 70px;
+  color: var(--color-blue);
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.major__icon i {
+  transition: all var(--animation-duration);
+}
+
+.major__icon:hover i {
+  color: var(--color-yellow);
+  transform: rotate(-30deg) scale(1.1);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.job__description {
+  margin: 4px 16px;
+  text-align: left;
+}
+
+.job__name,
+.job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+}
+
+.job__period {
+  font-style: var(--font-micro);
 }

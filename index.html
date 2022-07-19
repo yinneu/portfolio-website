@@ -25,7 +25,7 @@
     <!-- Navbar -->
     <nav id="navbar">
       <div class="navbar__logo">
-        <img src="/imgs/favicon.png" alt="logo" />
+        <!-- <img src="/imgs/favicon.png" alt="logo" /> -->
         <a href="#">YRY</a>
       </div>
       <div class="navbar__menu">
@@ -53,7 +53,7 @@
     </section>
 
     <!-- About -->
-    <section id="about">
+    <section id="about" class="section">
       <!-- 공통적으로 쓰이는 것은 클래스를 따로 지정하지x -->
       <h1>About me</h1>
       <p>
@@ -81,6 +81,7 @@
           <div class="major__description">
             Lorem ipsum dolor <br />
             sit amet consectetur.
+          </div>
         </div>
         <div class="major">
           <div class="major__icon">
@@ -90,30 +91,46 @@
           <div class="major__description">
             Lorem ipsum dolor <br />
             sit amet consectetur.
+          </div>
         </div>
       </div>
+
       <div class="about__jobs">
         <div class="job">
-          <img src="/imgs/jobs/HallymUniv_logo.png" alt="HallymUniv" class="job__logo">
-          <p class="job__name">Hallym University</p>
-          <p class="job__period">2020.3 ~ </p>
+          <img
+            src="/imgs/jobs/HallymUniv_logo.png"
+            alt="HallymUniv"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">Hallym University</p>
+            <p class="job__period">2020.3 ~</p>
+          </div>
         </div>
         <div class="job">
-          <img src="/imgs/jobs/logo-Caerang.png" alt="Caerang" class="job__logo">
-          <p class="job__name">Caerang</p>
-          <p class="job__period">2020.3 ~ </p>
+          <img
+            src="/imgs/jobs/HallymUniv_logo.png"
+            alt="Caerang"
+            class="job__logo"
+          />
+          <div class="job__description">
+            <p class="job__name">Caerang</p>
+            <p class="job__period">2020.3 ~</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>Skills</h1>
       <h2>Skills & Attributes</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-        Ea illum animi rerum explicabo iusto adipisci ipsum ratione 
-        dignissimos neque voluptate iste optio, officiis voluptates 
-        dolor perspiciatis numquam voluptatem delectus ut.</p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illum animi
+        rerum explicabo iusto adipisci ipsum ratione dignissimos neque voluptate
+        iste optio, officiis voluptates dolor perspiciatis numquam voluptatem
+        delectus ut.
+      </p>
       <div class="skillset">
         <div class="skilset__left">
           <h3 class="skillset__title">Skills</h3>
@@ -166,7 +183,7 @@
           <div class="etc">
             <h3 class="skillset__title">Etc</h3>
             <ul class="etc__list">
-              <li><span>Git</span></li> 
+              <li><span>Git</span></li>
             </ul>
           </div>
         </div>
@@ -174,103 +191,191 @@
     </section>
 
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section">
       <h1>My work</h1>
       <h3>Projects</h3>
       <div class="work__categories">
-        <button class="category__btn">All <span class="category__count">8</span></button>
-        <button class="category__btn">Front-end <span class="category__count">5</span></button>
-        <button class="category__btn">Back-end <span class="category__count">2</span></button>
-        <button class="category__btn">Mobile <span class="category__count">1</span></button>
+        <button class="category__btn">
+          All <span class="category__count">8</span>
+        </button>
+        <button class="category__btn">
+          Front-end <span class="category__count">5</span>
+        </button>
+        <button class="category__btn">
+          Back-end <span class="category__count">2</span>
+        </button>
+        <button class="category__btn">
+          Mobile <span class="category__count">1</span>
+        </button>
       </div>
       <!-- 클릭시 github로 hover: 정보가 나오도록-->
       <!-- 배포시에는 img 크기를 줄이는게 좋음 -->
       <div class="work__projects">
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project1.png" class="project__img" alt="project1">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project1.png"
+            class="project__img"
+            alt="project1"
+          />
           <div class="project__description">
             <h3>YRY's Github1</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project2.png" class="project__img" alt="project2">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project2.png"
+            class="project__img"
+            alt="project2"
+          />
           <div class="project__description">
             <h3>YRY's Github2</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project3.png" class="project__img" alt="project3">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project3.png"
+            class="project__img"
+            alt="project3"
+          />
           <div class="project__description">
             <h3>YRY's Github3</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project4.png" class="project__img" alt="project4">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project4.png"
+            class="project__img"
+            alt="project4"
+          />
           <div class="project__description">
             <h3>YRY's Github4</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project5.png" class="project__img" alt="project5">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project5.png"
+            class="project__img"
+            alt="project5"
+          />
           <div class="project__description">
             <h3>YRY's Github5</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project6.png" class="project__img" alt="project6">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project6.png"
+            class="project__img"
+            alt="project6"
+          />
           <div class="project__description">
             <h3>YRY's Github6</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project7.png" alt="project7">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img src="/imgs/projects/project7.png" alt="project7" />
           <div class="project__description">
             <h3>YRY's Github7</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
-        <a href="https://github.com/yinneu/portfolio" class="project" target="_blank">
-          <img src="/imgs/projects/project8.png" class="project__img" alt="project8">
+        <a
+          href="https://github.com/yinneu/portfolio"
+          class="project"
+          target="_blank"
+        >
+          <img
+            src="/imgs/projects/project8.png"
+            class="project__img"
+            alt="project8"
+          />
           <div class="project__description">
             <h3>YRY's Github8</h3>
             <span>Clone coding Portfolio Website with HTML and CSS</span>
           </div>
         </a>
       </div>
-      
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials">
+    <section id="testimonials" class="section">
       <h1>Testimonials</h1>
       <h3>See What they say about me</h3>
       <div class="testimonials">
         <div class="testimonial">
-          <img src="/imgs/testimonial/person1.png" alt="사람1" class="testimonials__avatar">
+          <img
+            src="/imgs/testimonial/person1.png"
+            alt="사람1"
+            class="testimonials__avatar"
+          />
           <div class="testimonial__speech-bubble">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ex quos exercitationem sint deserunt saepe minus quis aliquam consectetur aperiam.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium ex quos exercitationem sint deserunt saepe minus quis
+              aliquam consectetur aperiam.
+            </p>
             <!-- 이름 click : github -->
-            <p class="name"><a href="https://github.com/yinneu">Aaron</a> / Hallym</p>
+            <p class="name">
+              <a href="https://github.com/yinneu">Aaron</a> / Hallym
+            </p>
           </div>
         </div>
         <div class="testimonial">
-          <img src="/imgs/testimonial/person1.png" alt="사람1" class="testimonials__avatar">
+          <img
+            src="/imgs/testimonial/person1.png"
+            alt="사람1"
+            class="testimonials__avatar"
+          />
           <div class="testimonial__speech-bubble">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium ex quos exercitationem sint deserunt saepe minus quis aliquam consectetur aperiam.</p>
-            <p class="name"><a href="https://github.com/yinneu" target="_blank">Octavio</a> / Hallym</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium ex quos exercitationem sint deserunt saepe minus quis
+              aliquam consectetur aperiam.
+            </p>
+            <p class="name">
+              <a href="https://github.com/yinneu" target="_blank">Octavio</a> /
+              Hallym
+            </p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section">
       <h1 class="contact__title">Let's talk</h1>
       <h2 class="costack__email">yinneu@gmail.com</h2>
       <div class="contact__links">
