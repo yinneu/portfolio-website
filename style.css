@@ -10,7 +10,7 @@
   --color-light-grey: #7c7979;
   --color-blue: #73aace;
   --color-light-yellow: #fff7d1; /*yellow*/
-  --color-green: #28b32d; /*orange*/
+  --color-orange: #ff9500; /*orange*/
   --color-black: #000000;
 
   /* Font size */
@@ -171,11 +171,16 @@ p {
 .section {
   padding: 50px;
   text-align: center;
-  /* 최대넓이 지정 */
-  max-width: 1200px;
   /* margin 분배 */
   margin: auto;
 }
+
+.section__container {
+    /* 최대넓이 지정 */
+    max-width: 1200px;
+    margin: auto;
+}
+
 
 /* About */
 .about__majors {
@@ -241,3 +246,67 @@ p {
 .job__period {
   font-style: var(--font-micro);
 }
+
+/* Skills */
+#skill {
+  background-color: var(--color-light-yellow);
+}
+
+.skillset {
+  display: flex; 
+  background-color: var(--color-light-grey);
+  color: var(--color-light-white);
+  margin: 20px 0;
+}
+
+.skillset__title {
+  color: var(--color-white);
+}
+
+.skilset__left {
+  flex-basis: 60%;
+  background-color: var(--color-dark-grey);
+  padding: 20px 40px;
+}
+
+.skill {
+  margin-bottom: 32px; /*32px*/
+}
+
+.skill__description {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill__bar {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-grey);
+}
+
+.skill__value {
+  /* width : 개별적으로 다른 값은 html에서 정의하고 json 관리 */
+  width: 50%;
+  height: 3px;
+  background-color: var(--color-orange);
+
+}
+
+.skillset__right {
+  flex-basis: 40%;
+}
+
+.tools {
+  background-color: var(--color-grey);
+}
+
+.tools,
+.etc {
+  padding: 20px;
+}
+
+
+
+
+
+
