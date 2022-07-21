@@ -319,6 +319,9 @@ p {
 
 /* Work */
 .work__categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 40px;
 }
 
@@ -326,9 +329,8 @@ p {
   border: 1px solid var(--color-dark-white);
   border-radius: var(--Size-border-radius);
   font-size: var(--font-regular);
-  margin-bottom: 4px;
-  /* padding: 8px 48px; */
-  padding: 8px 24px 8px 54px ;
+  margin: 2px 1px; /* margin-bottom: 4px; */
+  padding: 8px 24px 8px 54px ; /* padding: 8px 48px; */
   transition: all var(--animation-duration) ease-in;
 }
 
@@ -526,6 +528,10 @@ p {
   }
 
   .skillset {
+    flex-direction: column;
+  }
+
+  .work__categories {
     flex-direction: column;
   }
 
