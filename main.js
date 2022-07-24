@@ -18,9 +18,8 @@ navbarMenu.addEventListener('click', (e) => {
   const target = e.target;
   const link = target.dataset.link
   if (link == null){
-  return;
+    return;
   }
-
   scrollIntoView(link);
 });
 
@@ -55,6 +54,34 @@ document.addEventListener('scroll', () => {
 arrowUp.addEventListener('click', () => {
   scrollIntoView('#home');
 });
+
+
+//프로젝트 카테고리
+const workBtnContainer = document.querySelector('.work__categories');
+const projectContainer = document.querySelector('.work__projects');
+const projects = document.querySelectorAll('.project');
+
+workBtnContainer.addEventListener('click', (e) => {
+  const filter = e.target.dataset.filter || e.target.parentNode.dataset.filter;
+  if(filter == null){
+    return;
+  } 
+  projectContainer.classList.add('anim-out');
+  
+  // 일정시간이 지난후 실행
+  setTimeout(() => {
+    projects.forEach(project => {
+      console.log(project.dataset.type);
+      if(filter === '*' || filter === project.dataset.type){
+        project.classList.remove('invisible');
+      } else {
+        project.classList.add('invisible');
+      }
+    });
+    projectContainer.classList.remove('anim-out');
+  }, 300);
+  
+})
 
 
 function scrollIntoView(selector) {
