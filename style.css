@@ -103,8 +103,9 @@ p {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 8px;
+  padding: 4px;
   transition: all var(--animation-duration) ease-in-out;
+  z-index: 1;
 }
 
 #navbar.navbar--dark {
@@ -308,7 +309,6 @@ p {
   width: 50%;
   height: 3px;
   background-color: var(--color-orange);
-
 }
 
 .skillset__right {

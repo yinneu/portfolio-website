@@ -12,17 +12,16 @@ document.addEventListener("scroll", () => {
   }
 });
 
-// window.onscroll = () => {
-//     if(window.scrollY >= navbar.offsetTop) {
-//         navbar.classList.add('sticky');
 
-//         // navbar.style.opacity = 1 - window.scrollY / navbarHeight;
-//     }else {
-//         navbar.classList.remove('sticky');
-//         navbar.style.backgroundColor =  rgba(0, 255, 0, 0.5);
-//     }
-// }
-
-// body.addEventListener('scroll', () =>{
-//     navbar.getElementsByClassName.opacity = window.scrollY;
-// })
+//Handle scolling when tapping on the navbar menu
+const navbarMenu = document.querySelector('.navbar__menu');
+navbarMenu.addEventListener('click', (e) => {
+   const target = e.target;
+   const link = target.dataset.link
+   if (link == null){
+    return;
+   }
+   console.log(e.target.dataset.link); 
+   const scrollTo = document.querySelector(link)
+   scrollTo.scrollIntoView({behavior: "smooth"});
+});
