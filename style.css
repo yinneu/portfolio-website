@@ -3,7 +3,7 @@
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
   --color-dark-white: #bdbdbd;
-  --color-yellow: #ffd52cd7; /*pink*/
+  --color-yellow: #ffd52c; /*pink*/
   --color-dark-yellow: #ffcc00b0; /*dark pink*/
   --color-dark-grey: #4d4d4d;
   --color-grey: #616161;
@@ -96,12 +96,19 @@ p {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-yellow);
+  background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 16px;
+  padding: 8px;
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: var(--color-yellow);
 }
 
 .navbar__menu {
@@ -152,6 +159,7 @@ p {
 #home {
   background: url("/imgs/home-background.png") center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
 }
 
