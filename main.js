@@ -3,7 +3,6 @@
 // Make Navbar transparent when it is on the top
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
-
 document.addEventListener("scroll", () => {
   if (window.scrollY > navbarHeight) {
     navbar.classList.add('navbar--dark');
@@ -25,14 +24,27 @@ navbarMenu.addEventListener('click', (e) => {
    scrollIntoView(link);
 });
 
+
 //Handle click on "contact me" button on home
 const contactBtn = document.querySelector('.home__contact');
 contactBtn.addEventListener('click', () => {
     scrollIntoView('#contact');
-})
+});
+
+
+
+//스크롤 다운시 home 투명도
+//Make home slowly fade to transparent as the window scrolls down
+const home = document.querySelector('.home__container');
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+
+  home.style.opacity = 1 - window.scrollY / homeHeight
+
+});
 
 
 function scrollIntoView(selector) {
-    const scrollTo = document.querySelector(selector);
-    scrollTo.scrollIntoView({behavior: "smooth"});
+  const scrollTo = document.querySelector(selector);
+  scrollTo.scrollIntoView({behavior: "smooth"});
 }
