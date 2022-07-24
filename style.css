@@ -103,7 +103,7 @@ p {
   background-color: transparent;
   align-items: center;
   color: var(--color-white);
-  padding: 4px;
+  padding: 6px;
   transition: all var(--animation-duration) ease-in-out;
   z-index: 1;
 }
@@ -148,8 +148,8 @@ p {
 
 .navbar__toggle-btn {
   position: absolute;
-  top: 21px;
-  right: 32px;
+  top: 10px;
+  right: 16px;
   font-size: 24px;
   color: var(--color-white);
   display: none;
