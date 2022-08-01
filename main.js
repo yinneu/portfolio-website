@@ -66,8 +66,14 @@ workBtnContainer.addEventListener('click', (e) => {
   if(filter == null){
     return;
   } 
+
+  const active = document.querySelector('.category__btn.selected');
+  active.classList.remove('selected');
+  //span선택시
+  const target = e.target.nodeName === 'BUTTON' ? e.target : e.target.parentNode;
+  e.target.classList.add('selected');
+
   projectContainer.classList.add('anim-out');
-  
   // 일정시간이 지난후 실행
   setTimeout(() => {
     projects.forEach(project => {
