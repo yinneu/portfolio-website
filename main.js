@@ -20,8 +20,18 @@ navbarMenu.addEventListener('click', (e) => {
   if (link == null){
     return;
   }
+  //스크롤시 navbar메뉴가 안보이도록
+  navbarMenu.classList.remove('open');
   scrollIntoView(link);
 });
+
+
+//mobile navbarToggleBtn 선택시 navbar 활성화
+// const navbarMenuList = document.querySelectora('.navbar__menu>ul');
+const navbarToggleBtn = document.querySelector('.navbar__toggle-btn');
+navbarToggleBtn.addEventListener('click', ()=>{
+  navbarMenu.classList.toggle('open');
+})
 
 
 //Handle click on "contact me" button on home
@@ -67,6 +77,7 @@ workBtnContainer.addEventListener('click', (e) => {
     return;
   } 
 
+  //Remove selection from the previous item and select the new one
   const active = document.querySelector('.category__btn.selected');
   active.classList.remove('selected');
   //span선택시
